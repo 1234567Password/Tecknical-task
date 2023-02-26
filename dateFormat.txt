@@ -1,0 +1,12 @@
+public class StringToDateExample {
+    public static void main(String[] args) {
+        String dateString = "2023-02-25";
+        SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd");
+        try {
+            Date date = dateFormat.parse(dateString);
+            System.out.println(date);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
+}

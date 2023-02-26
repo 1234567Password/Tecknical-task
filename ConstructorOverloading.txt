@@ -1,0 +1,30 @@
+public class ConstructorOverloadingExample {
+    private int x;
+    private int y;
+
+    // Constructor with no arguments
+    public ConstructorOverloadingExample() {
+        this.x = 0;
+        this.y = 0;
+    }
+
+    // Constructor with one argument
+    public ConstructorOverloadingExample(int x) {
+        this.x = x;
+        this.y = 0;
+    }
+
+    // Constructor with two arguments
+    public ConstructorOverloadingExample(int x, int y) {
+        this.x = x;
+        this.y = y;
+    }
+
+    public void print() {
+        System.out.println("x = " + x + ", y = " + y);
+    }
+
+    public static void main(String[] args) {
+        ConstructorOverloadingExample obj1 = new ConstructorOverloadingExample();
+        obj1.print();
+
